@@ -1,4 +1,4 @@
 To use;
 
-  docker run --rm -it ddub/show-ips-for-asg 'autoscale_group_name'
+  docker run --rm -it ddub/consul-join-ec2-api 'filter' 'by'
 
