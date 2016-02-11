@@ -38,7 +38,7 @@ wan = [i.private_ip_address
        for i in r.instances
        if i.state == 'running' and i.subnet_id != subnet_id]
 if len(wan) > 0:
-    wanflag = ' -wan '
+    wanflag = ' -join-wan '
     sys.stdout.write('{}{}'.format(
         wanflag,
         wanflag.join(wan)))
